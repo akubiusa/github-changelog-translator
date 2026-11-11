@@ -118,7 +118,7 @@ async function translateOrKeep(
  * 取得元・翻訳言語・出力先は環境変数 `GITHUB_CHANGELOG_URL`、`BEFORE_LANGUAGE`、
  * `AFTER_LANGUAGE`、`OUTPUT_CHANGELOG_PATH` で変更できる。
  *
- * @throws RSS の取得で HTTP エラーになった場合、または GAS_URL が設定されていない場合
+ * @throws GAS_URL が設定されていない場合、RSS の取得・パース・出力に失敗した場合
  */
 async function main() {
   const githubChangeLogURL =
